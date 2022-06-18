@@ -1,0 +1,134 @@
+:root {
+  --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--Light-Grayish-Blue);
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+.container {
+  margin: 12rem auto;
+  max-width: 66rem;
+  height: 27rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.grid {
+  display: grid;
+}
+.grid--2-cols {
+  grid-template-columns: 4fr 6fr;
+}
+.heading-primary {
+  font-weight: 700;
+  color: var(--Very-Dark-Grayish-Blue);
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.hero {
+  background-image: url(../images/drawers.jpg);
+  background-size: cover;
+}
+.details {
+  padding: 0 2.2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: space-evenly;
+  background-color: #fff;
+}
+.description {
+  color: var(--Desaturated-Dark-Blue);
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+.author-box {
+  display: flex;
+  gap: 1rem;
+}
+.author-box img {
+  height: 3.2rem;
+  border-radius: 50%;
+}
+
+.author-name {
+  color: var(--Very-Dark-Grayish-Blue);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.author-date {
+  font-weight: 300;
+  font-size: 1.3rem;
+
+  color: var(--Grayish-Blue);
+}
+.share-btn {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.7rem;
+  border: 0;
+  border-radius: 50%;
+  background-color: var(--Grayish-Blue);
+  margin-left: 12.8rem;
+}
+.share-btn .share-icon {
+  stroke: #6e8098;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+.container {
+  position: relative;
+}
+.share-box {
+  position: absolute;
+  width: 18rem;
+  height: 4rem;
+  padding: 1rem;
+  top: 50%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--Very-Dark-Grayish-Blue);
+  border-radius: 0.8rem;
+}
+.share-box .text {
+  color: rgba(255, 255, 255, 0.685);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
