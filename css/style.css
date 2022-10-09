@@ -12,10 +12,11 @@ html {
   overflow: hidden;
 }
 :root {
-  --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
-  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
-  --Grayish-Blue: hsl(212, 23%, 69%);
-  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+  --Very-Dark-Grayish-Blue: #48556a;
+  --Desaturated-Dark-Blue: #6d7f97;
+  --Grayish-Blue: #9eafc2;
+  --Light-Grayish-Blue: #ecf2f8;
+  --boxShadeow: rgba(113, 103, 103, 0.25);
 }
 
 body {
@@ -28,15 +29,13 @@ body {
   background-color: var(--Light-Grayish-Blue);
 
   /* Only works if there is nothing absolutely positioned in relation to body */
-  overflow-x: hidden;
-  z-index: 1;
+  /* overflow: auto; */
 }
 .container {
-  margin: 12rem auto;
-  max-width: 66rem;
-  height: 27rem;
-  border-radius: 1rem;
-  overflow: hidden;
+  margin: 15% auto;
+  width: 44%;
+  height: 35%;
+  box-shadow: 0 5px 20px var(--boxShadeow);
 }
 .grid {
   display: grid;
@@ -57,6 +56,11 @@ body {
 .hero {
   background-image: url(../images/drawers.jpg);
   background-size: cover;
+  border-radius: 1rem 0 0 1rem;
+  -webkit-border-radius: 1rem 0 0 1rem;
+  -moz-border-radius: 1rem 0 0 1rem;
+  -ms-border-radius: 1rem 0 0 1rem;
+  -o-border-radius: 1rem 0 0 1rem;
 }
 .details {
   padding: 0 2.2rem;
@@ -65,6 +69,11 @@ body {
   text-align: start;
   justify-content: space-evenly;
   background-color: #fff;
+  border-radius: 0 1rem 1rem 0;
+  -webkit-border-radius: 0 1rem 1rem 0;
+  -moz-border-radius: 0 1rem 1rem 0;
+  -ms-border-radius: 0 1rem 1rem 0;
+  -o-border-radius: 0 1rem 1rem 0;
 }
 .description {
   color: var(--Desaturated-Dark-Blue);
@@ -160,6 +169,16 @@ body {
     height: 80%;
     margin: 8rem 1.6rem;
   }
+  .hero {
+    border-radius: 1rem 1rem 0 0;
+    -webkit-border-radius: 1rem 1rem 0 0;
+    -moz-border-radius: 1rem 1rem 0 0;
+    -ms-border-radius: 1rem 1rem 0 0;
+    -o-border-radius: 1rem 1rem 0 0;
+  }
+  .details {
+    border-radius: 0 0 1rem 1rem;
+  }
   .heading-primary {
     font-size: 1.8rem;
   }
@@ -173,8 +192,8 @@ body {
   .author-date {
     margin-right: 9.6rem;
   }
-  body {
-    background-color: yellow;
+  .set-flex {
+    border-radius: 0 0 1rem 1rem;
   }
 }
 
