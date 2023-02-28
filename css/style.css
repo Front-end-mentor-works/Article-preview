@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -32,9 +32,9 @@ body {
   /* overflow: auto; */
 }
 .container {
-  margin: 15% auto;
-  width: 44%;
-  height: 35%;
+  margin: 22rem auto;
+  width: 66rem;
+  height: 26rem;
   box-shadow: 0 5px 20px var(--boxShadeow);
 }
 .grid {
@@ -63,11 +63,13 @@ body {
   -o-border-radius: 1rem 0 0 1rem;
 }
 .details {
-  padding: 0 2.2rem;
+  padding: 2.4rem 3.2rem;
+  gap: 16px;
   display: flex;
   flex-direction: column;
   text-align: start;
-  justify-content: space-evenly;
+  justify-content: space-between;
+
   background-color: #fff;
   border-radius: 0 1rem 1rem 0;
   -webkit-border-radius: 0 1rem 1rem 0;
@@ -77,28 +79,30 @@ body {
 }
 .description {
   color: var(--Desaturated-Dark-Blue);
-  font-size: 1.3rem;
-  line-height: 1.5;
+  font-size: 1.2rem;
+  line-height: 1.4;
 }
 .author-box {
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
 }
 .author-box img {
-  height: 3.2rem;
+  height: 3.6rem;
   border-radius: 50%;
+}
+.author-details {
+  display: flex;
+  gap: 1.6rem;
 }
 
 .author-name {
   color: var(--Very-Dark-Grayish-Blue);
   font-size: 1.3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 .author-date {
   font-weight: 300;
   font-size: 1.3rem;
-
-  margin-right: 12.8rem;
   color: var(--Grayish-Blue);
 }
 .share-btn {
@@ -107,7 +111,7 @@ body {
   padding: 0.7rem;
   border: 0;
   border-radius: 50%;
-  background-color: var(--Grayish-Blue);
+  background-color: var(--Light-Grayish-Blue);
 }
 .share-btn .share-icon {
   stroke: #6e8098;
